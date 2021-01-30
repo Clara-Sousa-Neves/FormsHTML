@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="exercising html">
+    <meta name="keywords" content="html, exercises, forms">
+    <meta name="author" content="Clara S Neves">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="30"> Refresh document every 30 seconds. -->
+    <link rel="stylesheet" href="#" type="text/css">
+    <title>Exercising Forms</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="/forms.html" method="POST">
+                <h1>This a form!</h1>
+                <h3>Personal Info</h3>
+                <label for="name">Fill with your name. </label>
+                <input type="text" name="user-name" id="name" placeholder="Your name" required><br><br>
+                <label for="email">Fill with your email. </label>
+                <input type="email" name="user-email" id="email" required><br><br>
+                <label for="pass">Fill with your pass. </label>
+                <input type="password" name="user-pass" id="pass" required><br><br>
+                <label for="telephone">Fill with your phone number. </label>
+                <input type="tel" name="tel" id="telephone" placeholder="91 123 45 67" pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required><br>
+                <small>Format: 91 123 45 67</small><br><br>
+                <label for="birthday">Your birthday. </label>
+                <input type="date" id="birthday" name="user-birthday"><br><br>
+                <label for="birthdaytime">Fill with your birthday and time. </label>
+                <input type="datetime-local" name="user-birthdayandtime" id="birthdaytime"><br><br>
+                <p>Select your gender.</p>
+                <input type="radio" name="gender" id="genderf" required>
+                <label for="genderf">F </label>
+                <input type="radio" name="gender" id="genderm" required>
+                <label for="genderm">M</label><br><br>
+                <h3>Professional Info</h3>
+                <label for="years">Fill with the years of your work experience. </label>
+                <input type="number" name="user-years" id="years" step="1"><br><br>
+                <label for="min-date">Pick a date after 1999-12-31. </label>
+                <input type="date" id="min-date" name="min-date" min="1999-12-31"><br><br>
+                <label for="max-date">Pick a date before 2000-12-31. </label>
+                <input type="date" id="max-date" name="max-date" max="2000-12-31"><br><br>
+                <label for="cv">Attach your resume. </label>
+                <input type="file" name="cv" id="cv" required><br><br>
+                <label for="url">Fill with your personal website. </label>
+                <input type="url" name="url" id="url"><br><br>
+                <label for="time">Fill with your time zone</label>
+                <input type="time" id="time" name="timezone"><br><br>
+                <label for="volume">Select the volume. </label>
+                <input type="range" name="volume" id="volume" min="0" max="50" step="1"><br><br>
+                <p>Select your soft skills. </p>
+                <label for="skills">Communication</label>
+                <input type="checkbox" id="skills" name="skills">
+                <label for="skills">Willingness to learn</label>
+                <input type="checkbox" id="skills" name="skills">
+                <label for="skills">Team Work</label>
+                <input type="checkbox" name="skills" id="skills"><br><br>
+                <label for="want">What do you want in a company? </label>
+                <select id="want" name="want">
+                    <option value="flexibility">Flexibility</option>
+                    <option value="healthplan">Health Plan</option>
+                    <option value="help">Help</option>
+                    <option value="learn">Courses to do</option>
+                </select><br><br>
+                <label for="city">Which city do want to work? </label>
+                <input type="text" list="cities" id="city" name="city">
+                <datalist id="cities">
+                    <option value="Porto"></option>
+                    <option value="Lisboa"></option>
+                    <option value="Braga"></option>
+                    <option value="Aveiro"></option>
+                </datalist><br><br>
+                <h3>Search for info</h3>
+                <label for="searchbar">Search for Information. </label>
+                <input type="search" name="searchbar" id="searchbar"><br><br>
+                <label for="textarea">Write the doubts you have. </label>
+                <textarea id="textarea" name="textarea" rows="10" cols="20">Write here</textarea><br><br>
+                <input type="submit" value="Submit your data">
+                <input type="reset" value="Reset your data">
+            </form>
+        </section>
+        <footer>
+            <br>
+            <hr>
+            <p>All rights reserved. 2021.</p>
+        </footer>
+    </main>
+</body>
